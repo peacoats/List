@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/labelItemToAdd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:text="Item To Add: "
+        android:paddingLeft="15dp"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:id="@+id/etItem"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/labelItemToAdd"
+        android:layout_alignBottom="@id/labelItemToAdd"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/labelPrice"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/labelItemToAdd"
+        android:text="Price of Item: "
+        android:paddingLeft="15dp"
+        android:textSize="30dp"
+        />
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/labelPrice"
+        android:layout_alignBottom="@id/labelPrice"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"
+        />
+    <TextView
+        android:id="@+id/labelAmount"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/labelPrice"
+        android:text="Amount of Item: "
+        android:paddingLeft="15dp"
+        android:textSize="30dp"
+        />
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/labelAmount"
+        android:layout_alignBottom="@id/labelAmount"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"
+        />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Add"
+        android:layout_below="@id/labelAmount"
+        />
+    <Button
+        android:id="@+id/estimateButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Estimate Cost"
+        android:layout_below="@id/addButton"
+        android:onClick="estimate"
+        />
+    <TextView
+        android:id="@+id/estimatedCost"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/estimateButton"
+        android:paddingLeft="15dp"
+        android:textSize="30dp"
+        />
+</RelativeLayout>
